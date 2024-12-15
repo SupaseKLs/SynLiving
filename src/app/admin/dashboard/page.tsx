@@ -44,15 +44,15 @@ const Dashboard = () => {
           </thead>
           <tbody>
             {
-            products.map((product: IProduct, index) =>(
-              <ProductRow
-              key={product._id}
-              srNo={index + 1}
-              setOpenPopup={setOpenPopup}
-              setUpdateTable={setUpdateTable}
-              product={product}
-              />
-            ))}
+              products.map((product: IProduct, index) => (
+                <ProductRow
+                  key={product._id}
+                  srNo={index + 1}
+                  setOpenPopup={setOpenPopup}
+                  setUpdateTable={setUpdateTable}
+                  product={product}
+                />
+              ))}
           </tbody>
         </table>
       </div>
