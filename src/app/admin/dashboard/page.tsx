@@ -4,6 +4,7 @@ import { setLoading } from '@/redux/features/loadingSlice';
 import { useAppDispatch } from '@/redux/hooks'
 import React, { useEffect, useState } from 'react'
 import ProductRow from '@/components/admin-panel/ProductRow';
+import Popup from '@/components/admin-panel/Popup';
 
 export interface IProduct {
   _id: string;
@@ -57,9 +58,9 @@ const Dashboard = () => {
         </table>
       </div>
     </div>
-    {/* {openPopup && (
+    {openPopup && (
       <Popup setOpenPopup={setOpenPopup} setUpdateTable={setUpdateTable} />
-    )} */}
+    )}
   </div>
 }
 
