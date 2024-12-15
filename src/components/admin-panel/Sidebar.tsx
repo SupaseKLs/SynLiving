@@ -48,7 +48,7 @@ const Sidebar = () => {
         </div>
 
         <ul className='space-y-4 mt-6'>
-            {menus.map(menu => <Link key={menu.title} href={menu.href} className={`flex gap-2 items-center p-4 rounded-lg cursor-pointer hover:bg-pink-400 hover:text-white ${pathName === menu.href ? "bg-pink-400 text-white" : "bg-gray-200"}`}>
+            {menus.map(menu => <Link key={menu.title} href={menu.href} className={`flex gap-2 items-center p-4 rounded-lg cursor-pointer hover:bg-secondary hover:text-white ${pathName === menu.href ? "bg-secondary text-white" : "bg-gray-200"}`}>
                 <div className="text-[20px]">{menu.icon}</div>
                 <p>{menu.title}</p>
             </Link>)}

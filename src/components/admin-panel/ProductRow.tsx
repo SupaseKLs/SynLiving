@@ -1,7 +1,6 @@
 import { IProduct } from "@/app/admin/dashboard/page";
 import { useAppDispatch } from "@/redux/hooks";
 import Image from "next/image";
-import { tr } from "framer-motion/client";
 import { Dispatch, SetStateAction } from "react";
 import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin5Line } from "react-icons/ri";
