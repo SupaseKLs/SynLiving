@@ -17,6 +17,10 @@ export default {
         primary: "#FFFFFA",
         secondary: "#4D3D30",
       },
+      container: {
+        center:true,
+        padding: "15px",
+      }
     },
   },
   plugins: [],
