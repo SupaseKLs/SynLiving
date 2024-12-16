@@ -16,7 +16,6 @@ interface IPayload {
 }
 
 const ProductForm = () => {
-
     const [payload, setPayload] = useState<IPayload>({
         imgSrc: null,
         fileKey: null,
