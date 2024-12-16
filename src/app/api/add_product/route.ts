@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
         const data = await Product.create({
             imgSrc, fileKey, name, category, price
         })
-
+console.log(fileKey)
         return NextResponse.json({msg: "Product added successfully", data})
     } catch (error) {
         return NextResponse.json({
